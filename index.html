@@ -1,0 +1,88 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Jade Macaambac Portfolio</title>
+    <style>
+:root{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #d2dae2;
+    font-family: roboto;
+    }
+.navigation{
+    position: relative;
+    width: 430px;
+    height: 78px;
+    background-color: #1e272e;
+    border-radius: 10px;
+    }
+.navigation ul{
+    display: flex;
+    width: 350px;
+    }
+.navigation ul li{
+    position: relative;
+    list-style: none;
+    width: 78px;
+    height: 78px;
+    z-index: 1;
+    }
+.navigation ul li a{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100X;
+    text-align: center;
+    font-weight: 580;
+    }
+    </style>
+</head>
+    <body>
+<li class-"list active">
+    <a href-"#">
+        <span class-"icon">
+            <ion-icon name-"home-outline"></ion-icon>
+        </span>
+        <span class="text">Home</span>
+    </a>
+</li>
+        </li> <li class-"list">
+            <a href="#">
+                <span class="icon">
+                    <ion-icon name-"book-outline"></ion-icon>
+                </span>
+                <span class-"text">About</span>
+            </a>
+        </li>
+        <li class-"list">
+            <a href-"#">
+                <span class-"icon">
+                    <ion-icon name="chatbox-ellipses-outline"></ion-icon>
+                </span>
+                <span class-"text">Contact Us</span>
+            </a>
+        </li>
+        <li classm"list">
+            <a href-"#">
+                <span class-"icon">
+                    <ion-icon name-"settings-outline"s</ion-icon>
+                </span>
+                <span class-"text">Setting</span>
+            </a>
+        </li> 
+    </body>
+    <script>
+        const list = document.querySelectorAll('.list')
+        function active() {
+            list.forEach((item) => item.classlist.remove('active'));
+            this.classlist.add('active');
+        }
+        list.forEach((item) => item.addEventlistener('click', active));
+    </script>
+</html>
