@@ -1,85 +1,69 @@
 <html lang="en">
 <head>
-    <script>
-        const list = document.querySelectorAll('.list')
-        function active() {
-            list.forEach((item) => item.classlist.remove('active'));
-            this.classlist.add('active');
-        }
-        list.forEach((item) => item.addEventlistener('click', active));
-    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JA's Travel Blog</title>
     <style>
-:root{
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background-color: #d2dae2;
-    font-family: roboto;
-    }
-.navigation{
-    position: relative;
-    width: 430px;
-    height: 78px;
-    background-color: #1e272e;
-    border-radius: 10px;
-    }
-.navigation ul{
-    display: flex;
-    width: 350px;
-    }
-.navigation ul li{
-    position: relative;
-    list-style: none;
-    width: 78px;
-    height: 78px;
-    z-index: 1;
-    }
-.navigation ul li a{
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 100X;
-    text-align: center;
-    font-weight: 580;
-    }
+        body {
+            font-family: Century Gothic, sans-serif;
+            font-weight: 400;
+            margin: 0;
+            padding: 0;
+            background: url('ja2.jpg') no-repeat center center/cover;
+            text-align: center;
+       
+            margin-bottom: 5px;
+            }
+        .logo-hover {
+            width: 75px;
+            transition: transform 0.3s ease-in-out;
+            }
+        .logo-hover:hover {
+            transform: scale(1.5);
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            background: rgba(255, 255, 255, 0.5);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #000;
+        }
+        p {
+            color: #000;
+            line-height: 1.6;
+        }
+        .home-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #880E4F;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .home-button:hover {
+            background-color: #e1ed02;
+        }
     </style>
 </head>
-    <body>
-<li class="list active">
-    <a href="#">
-        <span class="icon">
-            <ion-icon name="home-outline"></ion-icon>
-        </span>
-        <span class="text">Home</span>
-    </a>
-</li>
-        </li> <li class="list">
-            <a href="#">
-                <span class="icon">
-                    <ion-icon name="book-outline"></ion-icon>
-                </span>
-                <span class="text">About</span>
-            </a>
-        </li>
-        <li class="list">
-            <a href="#">
-                <span class="icon">
-                    <ion-icon name="chatbox-ellipses-outline"></ion-icon>
-                </span>
-                <span class="text">Contact Us</span>
-            </a>
-        </li>
-        <li class="list">
-            <a href="#">
-                <span class="icon">
-                    <ion-icon name="settings-outline"s</ion-icon>
-                </span>
-                <span class="text">Setting</span>
-            </a>
-        </li> 
-    </body>
-   </html>
+<body>
+    <div class="container">
+        <h1>About Me</h1>
+        <p>I am Jade, a dedicated security professional, an emerging graphic designer, and an aspiring web developer with a passion for blending safety, creativity, and technology. At 43 years old, I bring with me a wealth of experience in corporate security, surveillance operations, and risk management, ensuring that people, assets, and operations remain protected in ever-evolving environments. My expertise in security systems, threat assessments, and crisis response has allowed me to develop a proactive and strategic approach to problem-solving, always staying one step ahead to mitigate risks effectively.</p>
+        <p>While security has been my primary field, I have always been drawn to the world of design and digital innovation. As a basic graphic designer, I enjoy creating visual content that is both engaging and impactful. I have been exploring various design tools, developing layouts, and experimenting with different visual elements to enhance branding, marketing materials, and user experiences. My keen eye for detail, which has been sharpened by my years in security, allows me to craft designs that are not only aesthetically pleasing but also strategically aligned with brand messaging and user engagement.</p>
+        <p>In addition to design, I am also an aspiring web developer, diving deep into HTML, CSS, JavaScript, and other web technologies to build interactive and user-friendly websites. My goal is to create digital platforms that are not only functional but also visually compelling—marrying my security expertise with web development to craft safe, efficient, and innovative online spaces. I thrive on learning new technologies, problem-solving, and bringing ideas to life through code and design.</p>
+        <p>What sets me apart is my unique combination of skills. Security requires discipline, critical thinking, and risk assessment, while design and web development demand creativity, technical precision, and an understanding of user experience. By integrating these fields, I bring a versatile and dynamic approach to any team or organization. I am eager to apply my knowledge in security, design, and technology to roles that require a balance of protection, innovation, and digital transformation.</p>
+        <p>As I continue to grow in my career, I am looking for opportunities that will allow me to leverage my diverse expertise, contribute meaningfully to projects, and collaborate with professionals who share my passion for excellence, security, and innovation. If you are looking for someone with a strong work ethic, adaptability, and a relentless drive to improve and evolve, I am excited to bring my skills to the table and make a lasting impact.</p>
+        <p><strong>Welcome to my Professional Profile Website.</strong></p>
+        <a href="https://jmacaambac.github.io/mywebprofile/" class="home-button">Home</a>
+    </div>
+    <div>
+       <img src="2 copy 3.png" class="logo-hover" alt="My Logo" style="width: 100px;  display: inline-block;">
+    </div>
+
+</body>
+</html>
