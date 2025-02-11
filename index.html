@@ -71,16 +71,21 @@
    <script>
     const audio = document.getElementById("bg-music");
     const muteBtn = document.getElementById("mute-btn");
-    audio.addEventListener("canplay", function() {
+    audio.oncanplaythrough = function() {
+        console.log("Audio is ready to play!");
         audio.muted = false;
-    });
+    };
 
     muteBtn.addEventListener("click", function () {
-        audio.muted = !audio.muted;
-        if (audio.muted) {
-            muteBtn.textContent = "🔊";
-        } else {
-            muteBtn.textContent = "🔇";
+        if (audio) {
+            audio.muted = !audio.muted;
+            if (audio.muted) {
+                muteBtn.textContent = "🔊";
+            } else {
+                muteBtn.textContent = "🔇";
+            }
+
+            console.log("Audio muted status:", audio.muted);
         }
     });
 </script>
