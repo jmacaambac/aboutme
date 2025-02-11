@@ -71,16 +71,16 @@
    <script>
     const audio = document.getElementById("bg-music");
     const muteBtn = document.getElementById("mute-btn");
-
     audio.muted = false;
-
     muteBtn.addEventListener("click", function () {
+        console.log("Audio muted:", audio.muted);
         if (audio.muted) {
             audio.muted = false;
             muteBtn.textContent = "🔇";
         } else {
             audio.muted = true;
             muteBtn.textContent = "🔊";
+        console.log("Audio muted after click:", audio.muted);
     });
 </script>
 </head>
